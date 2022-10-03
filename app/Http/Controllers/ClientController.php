@@ -23,9 +23,9 @@ class ClientController extends Controller
         //
     }
 
-    public function show()
+    public function show(Client $client)
     {
-        //
+        return $client;
     }
 
     public function edit()

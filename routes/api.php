@@ -15,7 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Client;
 
-Route::get('/Client/{client}', function(Client $client){
-    return $client;
-
-});
+Route::get('/Client/{client}', 'ClientController@show');
